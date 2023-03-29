@@ -1,0 +1,87 @@
+.card-product
+{
+    position: sticky;
+    top: 0;
+    border: 1px solid #95A0A7 ;
+    margin-top: 30px;
+    width: 300px;
+    height: 525px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ecf0f3;
+}
+.imges
+{
+    width: 286px;
+    height: 286px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+.card-product img
+{
+    width: 286px;
+    height: 286px;
+    text-align: center;
+    border-radius: 8px;
+}
+.card-product .product
+{
+    padding-left: 14px;
+    margin-top: -22px;
+
+}
+.btn{
+    position: relative;
+    
+}
+
+.card-product .button
+{
+    position: absolute;
+    width: 100%;
+    text-decoration: none;
+    color:#ecf0f3;
+    background-color:   #295673;
+    bottom: 0;
+    border-radius: 0 0 5px 5px;
+}
+.card-product .button:hover
+{
+    background-color:  #2A414F;
+    color: #fff;
+    overflow: hidden;
+}
+.product-name
+{
+    margin: 0;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+    color: #0E161A;
+}
+.price
+{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #0E161A;
+}
+.caption
+{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.004em;
+    color: #2A414F;
+
+}
