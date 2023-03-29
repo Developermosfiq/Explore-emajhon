@@ -19,7 +19,7 @@ const Shop = () => {
     useEffect( () => {
         const storderCart = getShoppingCart()
         for(const id in storderCart){{
-            const saveProduct = products.find(p => p.id === id)
+            const saveProduct = products.find(products => products.id === id)
         }}
     }, [])
     const handaleAddToCart =(product)=>{
