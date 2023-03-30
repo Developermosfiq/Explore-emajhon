@@ -1,7 +1,7 @@
 .card-product
 {
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     border: 1px solid #95A0A7 ;
     margin-top: 30px;
     width: 300px;

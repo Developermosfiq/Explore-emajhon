@@ -6,9 +6,19 @@ const Cart = (props) => {
 
     let totalPrice = 0;
     let totalShipping =0;
+    let quentity = 0 ;
+
     for (const product of cart) {
-        totalPrice = totalPrice + product.price
-        totalShipping = totalShipping + product.shipping
+        // // step -1
+        // if(product.quentity === 0){
+        //     product.quentity = 1 ;
+        // }
+        
+        // // step-2
+        // product.quentity = product.quentity || 1 ; 
+
+        totalPrice = totalPrice + product.price * product.quentity;
+        totalShipping = totalShipping + product.shipping;
     }
     const totalTax = totalPrice * 5 / 100;
 
@@ -16,7 +26,7 @@ const Cart = (props) => {
     return (
         <div className='cart'>
             <h4>Order Summary</h4>
-            <p>Selected Items: {cart.length}</p>
+            <p>Selected Items: {quentity}</p>
             <p>Total Price : ${totalPrice}</p>
             <p>Total Shipping : {totalShipping}</p>
             <p>Tax : ${totalTax.toFixed(2)}</p>
